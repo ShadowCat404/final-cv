@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,700&display=swap');
+
+@font-face{
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Bold.woff);
+    src: url(../fonts/Raleway-Medium.ttf) format('truetype');
+    src: url(../fonts/Raleway-ExtraLightItalic.ttf) format('truetype');
+    src: url(../fonts/Raleway-Bold.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+
+/* HEADER DE PAGE */
+
+
+h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: "Lato";
+}
+
+h2{
+    font-family: "Lato";
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #782221;
+    padding: 40px;
+}
+
+.header__image {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.header__image:hover {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 100px;
+    cursor: zoom-in;
+}
+
+
+/* BODY DE LA PAGE */
+
+
+.personal__datas {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #2c1d27;
+    color: white;
+}
+
+.personal__datas>span {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.personal__datas>span:hover{
+    text-decoration: underline;
+}
+
+.personal__datas a { 
+    text-decoration: none; 
+    color: white;
+}
+
+.container {
+    display: flex;
+    border-right: 1px solid black;
+}
+
+.hobbies {
+    width: 30%;
+    background-color: #782221;
+    padding-top: 10px;
+}
+
+.hobbies__title {
+    font-family: "Lato";
+    font-weight: bold;
+    background-color: burlywood;
+    display: block;
+    padding: 5px 10px;
+    margin-right: 35px;
+}
+
+.hobbies__part>p {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.hobbies__part>p, .hobbies__part>ul {
+   color: white; 
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+
+/* DEUXIEME PARTIE DU CONTAINER */
+
+.professionnal{
+    width: 70%;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.professionnal__title {
+    font-family: "Lato";
+    transition: all 0.2s;
+    font-weight: bold;
+    background-color: burlywood;
+    display: block;
+    padding: 5px 10px;
+    border-left: 0px solid #782221;
+}
+
+.professionnal__title:hover {
+    transition: all 0.2s;
+    border-left: 5px solid #782221;
+}
+
+.professionnal>span, .professionnal>ul {
+    padding-top: 10px;
+}
+
+
+/* FOOTER DE PAGE */
+
+
+footer{
+    text-align: center;
+    background-color: #782221;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.social_networks {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.social_networks a {
+    display: flex;
+    width: fit-content;
+    margin: 0 10px;
+}
+
+.social_networks a:hover {
+    display: flex;
+    width: fit-content;
+    margin: 0 10px;
+    opacity: 35%;
+}
+
+.social_networks img {
+    height: 30px;
+}
